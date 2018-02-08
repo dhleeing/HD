@@ -32,8 +32,20 @@ let getConversationResponse = (message, context) => {
   };
 
   payload = preProcess(payload);
-
+  
+  //수정부분
   return new Promise((resolved, rejected) => {
+    // Send the input to the conversation service
+    conversation.message(payload, function(err, data) {
+      if (err) {
+        rejected(err);
+      }
+      resolved(postProcess(data));
+    });
+  })
+
+
+/*  return new Promise((resolved, rejected) => {
     // Send the input to the conversation service
     conversation.message(payload, function(err, data) {
       if (err) {
@@ -62,7 +74,9 @@ let getConversationResponse = (message, context) => {
       }
     });
   })
+*/
 }
+
 
 let postMessage = (req, res) => {
   let message = req.body.input || {};
