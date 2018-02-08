@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/watson-developer-cloud/conversation-simple.git"
+    "url": "git+https://github.com/watson-developer-cloud/conversation-simple.git"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -29,7 +29,7 @@
     "node-telegram-bot": "^0.1.9",
     "node-telegram-bot-api": "^0.27.0",
     "request": "^2.80.0",
-    "watson-developer-cloud": "^2.25.1"
+    "watson-developer-cloud": "^2.42.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
@@ -44,5 +44,11 @@
   "engine": {
     "node": ">= 6.9.x",
     "npm": "> 3.10.x"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/watson-developer-cloud/conversation-simple/issues"
+  },
+  "homepage": "https://github.com/watson-developer-cloud/conversation-simple#readme",
+  "keywords": [],
+  "author": ""
 }
